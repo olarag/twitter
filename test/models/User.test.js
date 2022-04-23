@@ -23,4 +23,13 @@ describe("Unit Tests for User class", () => {
 		expect(user.getDateCreated).not.toBeUndefined()
 		expect(user.getLastUpdated).not.toBeUndefined()
 	});
+
+	test('Add setters', () => {
+		const user = new User(1, "olarag", "Oscar", "Bio")
+		user.setUsername = "Lara"
+		expect(user.username).toBe("Lara")
+
+		user.setBio = "New Bio"
+		expect(user.bio).toBe("New Bio")
+	});
 })
