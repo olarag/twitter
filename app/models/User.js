@@ -16,8 +16,8 @@ class User {
 		return this.bio
 	}
 
-	get getDataCreated(){
-		return this.dataCreated
+	get getDateCreated(){
+		return this.dateCreated
 	}
 
 	get getLastUpdated(){
